@@ -1,0 +1,30 @@
+html {
+    line-height: 1.5;
+}
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+.container div {
+    width: 100%;
+    height: fit-content;
+    padding: var(--spacing);
+    padding-bottom: 0;
+}
+.text-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.par {
+    width: 100%;
+    margin-bottom: var(--half-spacing);
+}
+.date {
+    width: 100%;
+}
+.blog-image {
+    max-height: 500px;
+    margin-top: var(--spacing);
+    margin-bottom: var(--spacing);
+}
