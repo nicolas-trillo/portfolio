@@ -1,0 +1,6 @@
+body {
+    padding: var(--spacing);
+}
+div {
+    margin-top: var(--half-spacing);
+}
