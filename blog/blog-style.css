@@ -4,12 +4,12 @@ html {
 .container {
     max-width: 700px;
     margin: auto;
+    padding-bottom: var(--spacing);
 }
 .container div {
     width: 100%;
     height: fit-content;
     padding: var(--spacing);
-    padding-bottom: var(--half-spacing);
 }
 .text-container {
     display: flex;

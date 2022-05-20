@@ -3,6 +3,7 @@
 :root {
   --spacing: 20px;
   --half-spacing: 10px;
+  --double-spacing: 40px;
   --ligt-gray: rgb(247, 247, 247);
   --nt-btn-pad: 12px 30px;
   --nt-radius: 12px
