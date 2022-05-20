@@ -24,7 +24,21 @@ html {
     width: 100%;
 }
 .blog-image {
-    max-height: 500px;
     margin-top: var(--half-spacing);
     margin-bottom: var(--spacing);
+    width: fit-content !important;
+    padding: 0 !important;
+}
+.blog-image img {
+    max-height: 500px;
+}
+.blog-image p {
+    line-height: 1;
+    width: 100%;
+    text-align: right;
+    font-size: small;
+    margin: 0;
+}
+.blog-image a {
+    color: var(--light-gray-text);
 }

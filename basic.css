@@ -6,8 +6,10 @@
   --double-spacing: 40px;
   --ligt-gray: rgb(247, 247, 247);
   --nt-btn-pad: 12px 30px;
-  --nt-radius: 12px
-  --bloo: #0d6efd;
+  --nt-radius: 12px;
+  --blue: rgb(13, 110, 253);
+  --light-gray-text: rgb(173, 181, 189);
+
 }
 
 .nt-nav-button {
@@ -22,7 +24,7 @@
   -o-border-radius: var(--nt-radius);
 }
 .nt-text-grayed {
-  color: #adb5bd;
+  color: var(--light-gray-text);
 }
 
 /* Reset */
@@ -51,7 +53,7 @@ img {
 }
 
 a {
-  color: #0d6efd;
+  color: var();
 }
 
 /* Font */
