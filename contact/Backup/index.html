@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../basic.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Home | Nicolas Trillo</title>
+  </head>
+  <body>
+    <div class="container body-padded">
+      <div class="extra-cont nav-cont flex no-text-deco">
+        <div class="title">
+          <h1>Nicolas Trillo</h1>
+        </div>
+        <div class="navigation">
+          <a href="../blog/" class="nt-nav-button">Blog</a>
+          <a href="../contact/" class="nt-nav-button">Contact</a>
+          <a href="../" class="nt-logo nt-nav-button">Home</a>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="info">
+          <h1 class="page-title">Contact info</h1>
+          <p>You can reach out to me at my email:</p>
+          <a href="mailto:mines_tides.0p@icloud.com" class="mono"
+            >mines_tides.0p@icloud.com</a
+          >
+          <div class="nt-text-grayed info-cont">
+            <script>
+              let killElement = false;
+              function toggleInfoText() {
+                if (killElement == false) {
+                  $(".info-text").css("display", "block");
+                  killElement = true;
+                } else if (killElement == true) {
+                  $(".info-text").css("display", "none");
+                  killElement = false;
+                }
+              }
+            </script>
+            <div class="info-icon" onclick="toggleInfoText()">
+              <p class="mono">i</p>
+            </div>
+            <div class="info-text info-text-nv">
+              <p>
+                This is an iCloud Hide My Email address. You may email to it as
+                you would with any other email address, and I'll respond with my
+                real email.<br />This address might change constantly, so double
+                check it before sending your email.<br /><br />Why?<br />Because
+                the internet is filled with spam bots.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,3 +1,5 @@
+@import url(../basic.css);
+
 html {
     line-height: 1.5;
 }
@@ -50,4 +52,14 @@ html {
 button {
     align-self: baseline;
     margin-top: var(--spacing);
+}
+
+.nt-logo {
+    text-decoration: none;
+}
+
+.custom-nopdmr {
+    margin-top: var(--spacing);
+    padding: 0 !important;
+    line-height: 1;
 }

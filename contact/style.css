@@ -1,0 +1,132 @@
+.form-cont {
+    max-width: 600px !important;
+    margin: auto;
+}
+
+html, body, .container {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-cont, .page-content {
+    width: 100%;
+}
+
+.nav-cont {
+    height: fit-content;
+}
+
+.page-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing) 0px;
+}
+
+.names {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+
+.fname, .lname {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fname {
+    padding-right: var(--half-spacing);
+}
+
+.lname {
+    padding-left: var(--half-spacing);
+}
+
+@media (max-width: 711pt) {
+    .names {
+        flex-wrap: wrap;
+    }
+
+    .fname, .lname {
+        padding: 0;
+        width: 100%;
+    }
+
+    .captcha {
+        width: 100% !important;
+    }
+
+    .submit {
+        width: 100% !important;
+        margin-bottom: var(--spacing);
+    }
+}
+
+.fname label, .lname label, .fname input, .lname input, .email label, .email input, .message label, .message textarea {
+    width: 100%;
+}
+
+input, textarea {
+    margin-top: var(--half-spacing);
+    padding: var(--nt-radius);
+    border: 2px solid var(--light-gray-text);
+    border-radius: var(--nt-radius);
+    -webkit-border-radius: var(--nt-radius);
+    -moz-border-radius: var(--nt-radius);
+    -ms-border-radius: var(--nt-radius);
+    -o-border-radius: var(--nt-radius);
+}
+
+.email {
+    width: 100%;
+    height: fit-content;
+}
+
+.message {
+    width: 100%;
+    height: fit-content;
+}
+
+input, textarea {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    font-size: medium;
+}
+
+.captcha {
+    width: 50%;
+    height: fit-content;
+}
+
+.submit {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+}
+
+.nt-logo:hover {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.nt-logo p {
+    font-size: medium;
+}
+
+.page-title {
+    margin-bottom: var(--spacing);
+}

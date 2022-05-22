@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../basic.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Home | Nicolas Trillo</title>
+  </head>
+  <body>
+    <div class="container body-padded">
+      <div class="extra-cont nav-cont flex no-text-deco">
+        <div class="title">
+          <h1>Nicolas Trillo</h1>
+        </div>
+        <div class="navigation">
+          <a href="../blog/" class="nt-nav-button">Blog</a>
+          <a href="../contact/" class="nt-nav-button">Contact</a>
+          <a href="../" class="nt-logo nt-nav-button">Home</a>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="form-cont">
+          <h1 class="page-title">Contact form</h1>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify-recaptcha="true"
+            data-netlify="true"
+            class="form"
+          >
+            <div class="names">
+              <div class="fname">
+                <label for="first name">First name</label>
+                <input
+                  type="text"
+                  name="first name"
+                  placeholder="Urna"
+                  required
+                />
+              </div>
+              <div class="lname">
+                <label for="last name">Last name</label>
+                <input
+                  type="text"
+                  name="last name"
+                  placeholder="Semper"
+                  required
+                />
+              </div>
+            </div>
+            <div class="email">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="urna.semper@example.com"
+                required
+              />
+            </div>
+            <div class="message">
+              <label for="message">Message </label>
+              <textarea
+                name="message"
+                id="message"
+                rows="6"
+                placeholder="Lorem ipsum dolor sit amet."
+                style="resize: none"
+                required
+              ></textarea>
+            </div>
+            <div class="captcha">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+            <div class="submit">
+              <button type="submit" class="nt-logo nt-nav-button">
+                <p>Send</p>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
