@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
     setTimeout(() => {
         $('.loading').css('display', 'none');
-    }, 2000)
+    }, 0000)
 })
 
 function startup() {

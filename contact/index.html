@@ -15,15 +15,19 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./basic.css" />
+    <link rel="stylesheet" href="../basic.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-      var localPath = "./";
+      var localPath = "../";
     </script>
-    <script src="./app.js"></script>
-    <title>Home | NT</title>
+    <script src="../app.js"></script>
+    <title>Contact | NT</title>
   </head>
   <body onload="startup()">
     <div class="loading">
@@ -45,9 +49,9 @@
             <h4 class="caret-underscore">Menu<span>_</span></h4>
             <button class="nt-btn" onclick="toggleNav()">(Close)</button>
           </div>
-          <a href="./" class="nt-btn">Home</a>
-          <a href="./work/" class="nt-btn">Work</a>
-          <a href="./contact" class="nt-btn">Contact</a>
+          <a href="../" class="nt-btn">Home</a>
+          <a href="../work/" class="nt-btn">Work</a>
+          <a href="../contact" class="nt-btn">Contact</a>
           <a
             href="https://www.tedxyouth-yanahuara.com"
             class="nt-btn"
@@ -58,20 +62,43 @@
       </div>
     </nav>
     <main>
-      <p>
-        I'm a 17-year-old who's crazy enough to think that he can put together a
-        TEDx conference. And guess what.
-        <a href="https://www.tedxyouth-yanahuara.com" target="_blank"
-          >I did it.</a
-        >
+      <h2>Contact form</h2>
+      <p class="text-secondary">
+        I'd love to share my email, but spam bots would make my life miserable.
       </p>
-      <p>
-        Apart from constantly complaining about the weather, I also like to
-        <a href="./work">make apps</a>, <a href="./work/">build websites</a>,
-        take some leadership, help others in need, and listen to rock music
-        composed long before I was born.
-      </p>
-      <p>Did I mention I like computers?</p>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify-recaptcha="true"
+        data-netlify="true"
+        action="thanks.html"
+      >
+        <label for="name">Full name:</label>
+        <input type="text" name="name" placeholder="Urna Semper" required />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="urna.semper@example.com"
+          required
+        />
+        <label for="message">Message:</label>
+        <textarea
+          name="message"
+          id="message"
+          rows="6"
+          placeholder="Lorem ipsum dolor sit amet"
+          style="resize: none"
+          spellcheck="true"
+          required
+        ></textarea>
+        <div class="captcha-submit">
+          <div class="captcha">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+          <a type="submit" class="nt-btn send">Send</a>
+        </div>
+      </form>
     </main>
     <footer>
       <p class="division">
@@ -80,7 +107,7 @@
       <div class="foot-con">
         <p class="copyright">© 2023, Nicolas Trillo.</p>
         <div class="foot-con-l">
-          <a href="./contact/" class="nt-btn">Contact</a>
+          <a href="../contact/" class="nt-btn">Contact</a>
         </div>
         <p class="quote">"Be more to serve better"</p>
       </div>

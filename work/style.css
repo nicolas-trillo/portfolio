@@ -1,0 +1,37 @@
+main h2 {
+    padding-bottom: var(--half-spacing);
+}
+main p {
+    padding-bottom: var(--spacing);
+}
+
+main form input, form textarea {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    margin-bottom: var(--half-spacing);
+}
+main textarea {
+    margin: 0;
+}
+main form {
+    display: flex;
+    flex-direction: column;
+}
+.captcha-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nt-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+}
+.nt-btn:hover {
+    color: var(--black);
+    background-color: var(--text-white);
+}

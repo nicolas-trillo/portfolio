@@ -3,3 +3,10 @@ main {
     flex-direction: column;
     gap: var(--half-spacing);
 }
+.poembox {
+    width: 100%;
+}
+.poembox p, .poembox h3 {
+    width: 100%;
+    /* text-align: center; */
+}

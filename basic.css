@@ -11,7 +11,8 @@
     --apple-blue: rgb(0, 122, 255);
     --light-gray-text: rgb(173, 181, 189);
     --text-white: rgb(249, 249, 250);
-    --black: rgb(15, 15, 15);
+    /* --black: rgb(15, 15, 15); */
+    --black: rgb(25, 32, 41);
     --body-width: 550px;
 }
 
@@ -148,6 +149,7 @@ nav {
 }
 .menu {
     background: rgb(3, 35, 186);
+    background: #354550;
     display: none;
     height: 100vh;
     left: 0;
@@ -189,6 +191,10 @@ footer {
     width: 1000px;
     overflow-x: hidden;
     user-select: none;
+}
+.divi-cont {
+    width: 100%;
+    overflow-x: hidden;
 }
 .foot-con {
     display: flex;
